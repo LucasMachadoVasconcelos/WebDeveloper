@@ -1,0 +1,185 @@
+<!-- Lucas machado de Vasconcelos-->
+<!--This line will declare the codument type. This specific one tells the 
+browers what is the version I will be using which on this case is HTML 5. (Latest one) -->
+<!DOCTYPE html>
+
+<!--This line is a html tag, this tells the broweser that everything inside the html opening tag
+and the closing html tag will be a html code-->
+<html lang="en">
+
+<!--Partt of HTML file that hold information about the webpage and tells the browser how to 
+    handle the page-->
+
+    <head>
+
+    <!--This line is a meta element. This case it tells the browser will encode the characters 
+      for the browser. -->
+    <meta charset="UTF-8">
+
+    <!--This will be the title for the website. It will show on chrome URL and tab.-->
+    <title>Lucas's Personal Site</title>
+    </head>
+
+<!-- Contains the content of the Website-->
+
+    <body>
+        <table cellspacing=20>
+            <tr>
+                <td>
+                    <!--During tag will place images on the website(This takes either the path of the picture file or a URL), the alt tag will place a 
+                        text in case the image was not properly printed-->
+                    <img src="Lucas.jpg" alt="Picture Not Found">
+                    <br>
+                    <!--Line Break-->
+                </td>
+                <td>
+                    <h1>Lucas Machado de Vasconcelos</h1>
+                    <!--Header-->
+                    <p><em>Controls System Engineer</em></p>
+                    <!--Paragraph Text-->
+                    <p>I am currently workign for Rolenn and I am enrolled on Web Developer course.</p>
+                    <!--This is called Anchor TAG or Hyper Text -> text that you click on the phrases or letter and you will be driven to another website-->
+                    <a href="https://www.linkedin.com/in/lucasmachadovasconcelos-b62b13a7/">Linked in Profile</a>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <hr size=3>
+        <h3>Degrees</h3>
+        <ul>
+            <!--Unordered List-->
+            <li><a href="https://www.azwestern.edu/">Graduate from AWC</a></li>
+            <li><a href="https://prescott.erau.edu/">Graduated from ERAU</a></li>
+            <li>Certificate on Machine Learning Mathematics</li>
+        </ul>
+        <hr size=3>
+        <h3>My Hobbies</h3>
+        <ol>
+            <!--Ordered List-->
+            <li>I love my Wife</li>
+            <li>Soccer</li>
+            <li>Guittar</li>
+            <li>Games</li>
+        </ol>
+        <br>
+
+        <!-- Assume I wanted to create the hobbies on a different page we can do the folllowing create a new HTML file and then the follwoing code. -->
+        <h3><a href="hobbies.html">My Hobbies</a></h3>
+        <hr size=3>
+        <h4><a href="contactme.html">Contact me</a></h4>
+
+        <!--Adding Work Experience with a table tag-->
+        <h3>Work Experience</h3>
+        <hr size=3>
+        <table cellspacing=20>
+            <!--Create the table-->
+            <tr>
+                <th>Date:</th>
+                <th>Work:</th>
+            </tr>
+            <tr>
+                <!--Create rows for the table-->
+                <td>December 2019 to Current</td> <!-- Create data from the cells on the table-->
+                <td>Controls System Engineer</td>
+            </tr>
+            <tr>
+                <td>July to November of 2019</td>
+                <td>Software Deeveloper Intern</td>
+            </tr>
+        </table>
+
+        <hr size=3>
+        <h3>Skils</h3> <!-- Nested table to have two tables next to each other.-->
+        <table cellspacing=20>
+            <tr>
+                <td>Python</td>
+                <td>🥇</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>🥈</td>
+            </tr>
+            <tr>
+                <td>Soccer</td>
+                <td>🥉</td>
+            </tr>
+        </table>
+        <!-- Not good programming leave the Organization by CSS code.
+            <table>
+                <tr>
+                    <td>
+                        <table cellspacing=20>
+                            <tr>
+                                <td>Python</td>
+                                <td>🥇</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>🥈</td>
+                            </tr>
+                            <tr>
+                                <td>Soccer</td>
+                                <td>🥉</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table cellspacing=20>
+                            <tr>
+                                <td>Web Developing</td>
+                                <td>🥈</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>🥉</td>
+                            </tr>
+                            <tr>
+                                <td>Portuguese</td>
+                                <td>🥇</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            -->
+
+        <!-- This is the table main format.
+            <table>
+                <thead>
+
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+
+                </tbody>
+            </table>
+        -->
+        <!-- This tag shall create a from ont he website, that allow the user to leaven info to the website.-->
+        <!-- For now we can only add them but they wont have any fuinctionality untill we learn java-->
+        <!--If we have the following it will crerate a email when pressed the submiut button with a couple info on it already
+        -->
+        <!--<form class="" action="mailto:vasconcelosmlucas@outlook.com" method="post" enctype="text/plain">-->
+        <form class="" action="index.html" method="post" enctype="text/plain">
+            <label>Your Name:</label><!--Lable the form-->
+            <input type="text" name="yourName"><!--Create empty input box-->
+            <br>
+            <label>Your Email:</label>
+            <input type="email" name="yourEmail" id=""> <!--Email Textbox-->
+            <br>
+            <label for="">Your Message</label>
+            <textarea name="yourMessage id=" cols="30" rows="10"></textarea><!--Text are for the message to be stored.-->
+            <br>
+            <input type="submit"><!--Create button-->
+            <br>
+            <!--
+            <label>Password</label>
+            <input type="password" name="Password" id="Lucas">  Create a password box--> 
+        </form>
+
+    </body>
+
+
+</html>
